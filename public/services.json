@@ -1,0 +1,51 @@
+[
+    {
+      "id": "WED001",
+      "name": "Elegant Weddings",
+      "image": "https://i.ibb.co/yR4cp09/wedding.jpg",
+      "price": "৳25000-৳10000",
+      "shortDescription": "Create timeless memories with our Classic Wedding Package.",
+      "description": "Our Classic Wedding Package includes everything you need to make your wedding day unforgettable. From venue selection to catering, decor, and entertainment, we've got you covered. Enjoy a stress-free wedding planning experience with our expert team. Key features:\n1. Venue selection assistance\n2. Catering and menu customization\n3. Elegant decor and floral arrangements\n4. Professional photography and videography\n5. Live music and DJ services"
+    },
+    {
+      "id": "BIR001",
+      "name": "Fantastic Birthdays",
+      "image": "https://i.ibb.co/dcy9hSb/birthday.jpg",
+      "price": "৳5000-৳50000",
+      "shortDescription": "Make your birthday an unforgettable celebration with our Birthday Bash package.",
+      "description": "With our Ultimate Birthday Bash package, you can throw the perfect birthday party for yourself or your loved ones. We take care of everything, from theme selection to cake and entertainment, ensuring a memorable day filled with joy. Key features:\n1. Theme selection and decoration\n2. Customized birthday cake\n3. Party games and activities\n4. Professional party host\n5. Party favors and gifts"
+    },
+    {
+      "id": "ANN001",
+      "name": "Amazing Anniversaries",
+      "image": "https://i.ibb.co/h1PFBc9/anniversary.jpg",
+      "price": "৳35000-৳80000",
+      "shortDescription": "Celebrate your love with a romantic anniversary dinner.",
+      "description": "Our Romantic Anniversary Dinner package is designed for couples who want to celebrate their love in style. Enjoy a private, candlelit dinner in a beautiful setting, complete with gourmet cuisine and personalized service. Key features:\n1. Private dining experience\n2. Gourmet 4-course meal\n3. Wine pairings available\n4. Personalized table setup\n5. Romantic ambiance"
+    },
+    {
+      "id": "ENG001",
+      "name": "Exquisite Engagements",
+      "image": "https://i.ibb.co/TK0sjvN/engagement.jpg",
+      "price": "৳12000-৳30000",
+      "shortDescription": "Celebrate your engagement with an extravagant party.",
+      "description": "Our Engagement Extravaganza package is perfect for couples who want to celebrate their engagement in style. From venue selection to engagement party planning, we handle all the details, ensuring a memorable event for you and your guests. Key features:\n1. Venue selection and decor\n2. Engagement party planning\n3. Customized engagement cake\n4. Entertainment and music\n5. Photo booth and props"
+    },
+    {
+      "id": "RET001",
+      "name": "Remarkable Retirements",
+      "image": "https://i.ibb.co/cJnFNcq/retirement.jpg",
+      "price": "৳8000-৳70000",
+      "shortDescription": "Celebrate a well-deserved retirement with a memorable party.",
+      "description": "Our Retirement Celebration package is designed to honor those who are retiring after years of hard work. We create a memorable retirement party with a personalized touch, ensuring a special day for the retiree and their guests. Key features:\n1. Retirement party planning\n2. Customized retirement cake\n3. Guest speeches and tributes\n4. Entertainment options\n5. Decorations and themes"
+    },
+    {
+      "id": "BAB001",
+      "name": "Beautiful Baby Showers",
+      "image": "https://i.ibb.co/hdnpD7Q/baby-shower.jpg",
+      "price": "৳3000-৳15500",
+      "shortDescription": "Welcome the arrival of a new bundle of joy with our Baby Shower Bliss package.",
+      "description": "Our Baby Shower Bliss package is designed to make the baby shower a joyous and memorable occasion. From cute decorations to fun games and activities, we ensure that the parents-to-be and guests have a wonderful time. Key features:\n1. Baby shower planning\n2. Adorable baby-themed decor\n3. Baby shower games and activities\n4. Customized baby shower cake\n5. Party favors and gifts"
+    }
+  ]
+  
