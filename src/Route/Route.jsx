@@ -6,6 +6,8 @@ import About from "../Pages/About/About";
 import Contact from "../Pages/Contact/Contact";
 import Events from "../Pages/Events/Events";
 import Gallery from "../Pages/Gallery/Gallery";
+import Login from "../Pages/Login/Login";
+import Register from "../Pages/Register/Register";
 
 const myCreatedRoute = createBrowserRouter([
   {
@@ -22,7 +24,7 @@ const myCreatedRoute = createBrowserRouter([
         element: <Events />,
       },
       {
-        path:'/gallery',
+        path: "/gallery",
         element: <Gallery />,
       },
       {
@@ -32,11 +34,19 @@ const myCreatedRoute = createBrowserRouter([
       },
       {
         path: "/about",
-        element: <About/>,
+        element: <About />,
       },
       {
         path: "/contact-us",
         element: <Contact />,
+      },
+      {
+        path: "/login",
+        element: <Login />,
+      },
+      {
+        path: "/register",
+        element: <Register />,
       },
     ],
   },

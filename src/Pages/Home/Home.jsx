@@ -3,6 +3,7 @@ import Card from "../../Components/Card/Card";
 import Banner from "../../Components/Header/Banner";
 import Divider from "../../Components/Divider/Divider";
 import Services from "../../Components/Services/Services";
+import Testimonial from "../../Components/Testimonial/Testimonial";
 
 
 const Home = () => {
@@ -28,6 +29,7 @@ const Home = () => {
         ))}
       </div>
       <Services></Services>
+      <Testimonial></Testimonial>
     </div>
   );
 };

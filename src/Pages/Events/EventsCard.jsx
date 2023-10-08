@@ -7,7 +7,7 @@ const EventsCard = (props) => {
     <div className="space-y-2 my-10 border-[#FD60A2] border-2 p-2 rounded-lg">
       <img
         src={img}
-        alt="" className="w-full"
+        alt={title} className="w-full"
       />
       <h3 className="text-3xl font-semibold">{title}</h3>
       <p className="text-lg flex items-center gap-2">
