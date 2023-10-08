@@ -4,6 +4,7 @@ import Banner from "../../Components/Header/Banner";
 import Divider from "../../Components/Divider/Divider";
 import Services from "../../Components/Services/Services";
 
+
 const Home = () => {
   const services = useLoaderData();
   console.log(services);

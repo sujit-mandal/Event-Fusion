@@ -24,22 +24,22 @@ const Navbar = () => {
               </li>
               <li>
                 <NavLink
-                  to="/manager-tools"
+                  to="/events"
                   className={({ isActive, isPending }) =>
                     isPending ? "pending" : isActive ? "active" : ""
                   }
                 >
-                  Manager Tools
+                  Events
                 </NavLink>
               </li>
               <li>
                 <NavLink
-                  to="/suppliers"
+                  to="/gallery"
                   className={({ isActive, isPending }) =>
                     isPending ? "pending" : isActive ? "active" : ""
                   }
                 >
-                  Suppliers
+                  Gallery
                 </NavLink>
               </li>
               <li>
