@@ -1,13 +1,15 @@
 import { Link, useNavigate } from "react-router-dom";
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { AuthContext } from "../../Provider/AuthProvider";
 import { updateProfile } from "firebase/auth";
 import auth from "../../Firebase/firebase.config";
 import SocialLogin from "../../Components/SocialLogin/SocialLogin";
+import toast from "react-hot-toast";
 
 const Register = () => {
   const navigate = useNavigate();
   const { createUser, logOut } = useContext(AuthContext);
+  // const [error, setError] = useState(null);
 
   const handleCreateUser = (e) => {
     e.preventDefault();
@@ -16,36 +18,45 @@ const Register = () => {
     const email = e.target.email.value;
     const password = e.target.password.value;
 
-    createUser(email, password)
-      .then((result) => {
-        const user = result.user;
-        console.log(user);
-        updateProfile(auth.currentUser, {
-          displayName: name,
-          photoURL: photoURL,
-        })
-          .then(() => {
-            // Profile updated!
-            console.log("Profile updated");
-            logOut()
-              .then(() => {
-                navigate("/login");
-              })
-              .catch((error) => {
-                const errorMessage = error.message;
-                console.log(errorMessage);
-              });
+    if (password.length < 6) {
+      toast.error("Password must be at least 6 characters long");
+      return;
+    } else if (
+      !/^(?=.*[A-Z])(?=.*[!@#$%^&*()_+{}\[\]:;<>,.?~\\-]).+$/.test(password)
+    ) {
+      toast.error(
+        "Password should be contain at least a Capital letter & Special character."
+      );
+      return;
+    } else {
+      createUser(email, password)
+        .then((result) => {
+          toast.success("Account Created Successfully");
+          updateProfile(auth.currentUser, {
+            displayName: name,
+            photoURL: photoURL,
           })
-          .catch((error) => {
-            // An error occurred
-            console.log("Error occurred in profile updating");
-          });
-      })
-      .catch((error) => {
-        const errorMessage = error.message;
-        console.log(errorMessage);
-      });
+            .then(() => {
+              logOut()
+                .then(() => {
+                  navigate("/login");
+                })
+                .catch((error) => {
+                  const errorMessage = error.message;
+                  toast.error(errorMessage);
+                });
+            })
+            .catch((error) => {
+              toast.error("Error occurred in profile updating");
+            });
+        })
+        .catch((error) => {
+          const errorMessage = error.message;
+          toast.error(errorMessage);
+        });
+    }
   };
+
   return (
     <div className="mt-5 ">
       <div className="mx-auto mt-15 mb-5 w-full max-w-sm p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-6 md:p-8">
@@ -102,7 +113,7 @@ const Register = () => {
                   required
                 />
               </div>
-              <label className="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">
+              <label className="ml-2 text-sm font-medium text-gray-900">
                 Accept
               </label>
               <a
@@ -121,14 +132,16 @@ const Register = () => {
           </button>
           <div className="text-sm font-medium text-gray-500">
             Have Account?
-            <Link to={"/login"} className="text-primary-color ml-2 hover:underline">
+            <Link
+              to={"/login"}
+              className="text-primary-color ml-2 hover:underline"
+            >
               Login account
             </Link>
           </div>
         </form>
         <SocialLogin></SocialLogin>
       </div>
-      
     </div>
   );
 };

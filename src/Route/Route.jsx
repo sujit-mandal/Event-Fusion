@@ -8,6 +8,8 @@ import Events from "../Pages/Events/Events";
 import Gallery from "../Pages/Gallery/Gallery";
 import Login from "../Pages/Login/Login";
 import Register from "../Pages/Register/Register";
+import PrivateRoute from "./PrivateRoute";
+import ErrorPage from "../Pages/ErrorPage/ErrorPage";
 
 const myCreatedRoute = createBrowserRouter([
   {
@@ -21,24 +23,28 @@ const myCreatedRoute = createBrowserRouter([
       },
       {
         path: "/events",
-        element: <Events />,
+        element: (
+          <PrivateRoute>
+            <Events />
+          </PrivateRoute>
+        ),
       },
       {
         path: "/gallery",
-        element: <Gallery />,
+        element: (
+          <PrivateRoute>
+            <Gallery />
+          </PrivateRoute>
+        ),
       },
       {
         path: "/service-details/:id",
-        element: <ServiceDetails />,
+        element: (
+          <PrivateRoute>
+            <ServiceDetails />
+          </PrivateRoute>
+        ),
         loader: () => fetch("/services.json"),
-      },
-      {
-        path: "/about",
-        element: <About />,
-      },
-      {
-        path: "/contact-us",
-        element: <Contact />,
       },
       {
         path: "/login",
@@ -47,6 +53,10 @@ const myCreatedRoute = createBrowserRouter([
       {
         path: "/register",
         element: <Register />,
+      },
+      {
+        path: "*",
+        element: <ErrorPage />,
       },
     ],
   },

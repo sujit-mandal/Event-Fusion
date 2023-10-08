@@ -1,42 +1,50 @@
+import { Link } from "react-router-dom";
+import { FaFacebook } from "react-icons/fa6";
+import { AiFillGithub, AiFillYoutube } from "react-icons/ai";
 const Footer = () => {
   return (
     <div>
-      <footer className="flex w-full flex-row flex-wrap items-center justify-center gap-y-6 gap-x-12 border-t border-blue-gray-50 py-6 text-center md:justify-between">
-        <p className="block font-sans text-base font-normal leading-relaxed text-blue-gray-900 antialiased">
+      <footer className="flex w-full flex-col md:flex-row md:px-5 flex-wrap items-center justify-center gap-y-6 gap-x-12 border-t border-blue-gray-50 py-6 text-center md:justify-between">
+        <p className="block font-sans text-xl font-normal leading-relaxed text-gray-900 antialiased">
           © 2023 Event Fusion
         </p>
-        <ul className="flex flex-wrap items-center gap-y-2 gap-x-8">
+        <div className="text-3xl flex items-center gap-4">
+          <FaFacebook></FaFacebook>
+          <AiFillGithub></AiFillGithub>
+          <AiFillYoutube></AiFillYoutube>
+        </div>
+        <ul className="flex flex-col lg:flex-row flex-wrap items-center md:items-start gap-y-2 gap-x-8">
           <li>
-            <a
-              href="#"
+            <Link
+              to={"*"}
               className="block font-sans text-base font-normal leading-relaxed text-blue-gray-900 antialiased transition-colors hover:text-pink-500 focus:text-pink-500"
             >
               About Us
-            </a>
+            </Link>
           </li>
           <li>
-            <a
-              href="#"
-              className="block font-sans text-base font-normal leading-relaxed text-blue-gray-900 antialiased transition-colors hover:text-pink-500 focus:text-pink-500"
-            >
-              License
-            </a>
-          </li>
-          <li>
-            <a
-              href="#"
-              className="block font-sans text-base font-normal leading-relaxed text-blue-gray-900 antialiased transition-colors hover:text-pink-500 focus:text-pink-500"
-            >
-              Contribute
-            </a>
-          </li>
-          <li>
-            <a
-              href="#"
+            <Link
+              to={"*"}
               className="block font-sans text-base font-normal leading-relaxed text-blue-gray-900 antialiased transition-colors hover:text-pink-500 focus:text-pink-500"
             >
               Contact Us
-            </a>
+            </Link>
+          </li>
+          <li>
+            <Link
+              to={"*"}
+              className="block font-sans text-base font-normal leading-relaxed text-blue-gray-900 antialiased transition-colors hover:text-pink-500 focus:text-pink-500"
+            >
+              Privacy Policy
+            </Link>
+          </li>
+          <li>
+            <Link
+              to={"*"}
+              className="block font-sans text-base font-normal leading-relaxed text-blue-gray-900 antialiased transition-colors hover:text-pink-500 focus:text-pink-500"
+            >
+              Terms & Conditions
+            </Link>
           </li>
         </ul>
       </footer>

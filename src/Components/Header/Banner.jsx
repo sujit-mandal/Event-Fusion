@@ -26,7 +26,7 @@ console.log(slides)
         {slides?.map((slide, index) => (
           <SwiperSlide key={index}>
             <div
-              className="relative overflow-hidden rounded-lg bg-cover bg-no-repeat p-12 text-center h-[60vh]"
+              className="relative mx-3 lg:mx-0 overflow-hidden rounded-lg bg-cover bg-no-repeat p-12 text-center h-[60vh]"
               style={{
                 backgroundImage: `url('${slide?.image}')`,
               }}
@@ -37,8 +37,8 @@ console.log(slides)
               >
                 <div className="flex h-full items-center justify-center">
                   <div className="text-white">
-                    <h4 className="mb-6 text-xl font-semibold italic">{slide?.motto}</h4>
-                    <h2 className="mb-4 text-6xl font-semibold text-center mx-auto w-2/3">{slide?.title}</h2>
+                    <h4 className="mb-6 text-base md:text-xl font-medium md:font-semibold italic">{slide?.motto}</h4>
+                    <h2 className="mb-4 text-2xl md:text-6xl font-medium md:font-semibold text-center mx-auto w-2/3">{slide?.title}</h2>
                   </div>
                 </div>
               </div>

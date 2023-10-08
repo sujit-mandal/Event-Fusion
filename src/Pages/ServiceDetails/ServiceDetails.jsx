@@ -1,4 +1,3 @@
-import checkmark from '../../assets/checkmark.png';
 import { useLoaderData, useParams } from "react-router-dom";
 
 const ServiceDetails = () => {

@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import TestimonialCard from "./TestimonialCard";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination } from "swiper/modules";
+import { Autoplay, Navigation, Pagination } from "swiper/modules";
 
 import "swiper/css";
 import "swiper/css/navigation";
@@ -26,10 +26,21 @@ const Testimonial = () => {
         Happy client about us
       </p>
       <Swiper
-        modules={[Navigation, Pagination]}
-        spaceBetween={50}
+        modules={[Navigation, Pagination, Autoplay]}
+        spaceBetween={5}
         slidesPerView={3}
         autoplay={true}
+        breakpoints={{
+          0: {
+            slidesPerView: 1,
+          },
+          735: {
+            slidesPerView: 2,
+          },
+          1080: {
+            slidesPerView: 3,
+          },
+        }}
       >
         {testimonials.map((testimonial) => (
           <SwiperSlide key={testimonial.id}>

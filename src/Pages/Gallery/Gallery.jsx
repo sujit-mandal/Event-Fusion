@@ -31,7 +31,7 @@ const photos = [
 
 const Gallery = () => {
   return (
-    <div className="App">
+    <div className="App px-5">
       <h1 className="text-center text-5xl my-10 font-bold">
         Fusion <span className="text-[#FD60A2]">Gallery</span>
       </h1>

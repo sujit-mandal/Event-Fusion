@@ -17,10 +17,7 @@ const AuthProvider = ({ children }) => {
   const [user, setUser] = useState(null);
   const [loading, setLoading] = useState(true);
   const googleProvider = new GoogleAuthProvider();
-  const onClick = (id) => {
-    setCategoryId(id);
-  };
-
+  
   const GoogleSignIn = () => {
     setLoading(true);
     return signInWithPopup(auth, googleProvider);
@@ -53,7 +50,6 @@ const AuthProvider = ({ children }) => {
   const authInfo = {
     user,
     loading,
-    onClick,
     GoogleSignIn,
     createUser,
     loginUser,
