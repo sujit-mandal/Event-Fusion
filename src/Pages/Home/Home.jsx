@@ -18,7 +18,7 @@ const Home = () => {
           <span className="pr-2 text-[#FD60A2]">Event Fusion</span>Services
         </h1>
         <p className="px-1 md:px-0 py-2 text-lg font-medium">
-          We make your events smart & impactful by personalised event management
+          We make your events smart & impactful by personalized event management
           services.
         </p>
       </div>

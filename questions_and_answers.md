@@ -18,9 +18,9 @@ console.log(greetign);
 <details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer: ?
+#### Answer: A
 
-<i>Write your explanation here</i>
+<i>At first a variable named 'greeting' is declared but it is not assigned any value. Then assign an empty object to a variable called 'greetign'. New variable 'greetign' is created in the global scope & it holds an empty object. Then when it console logged it's output an empty object.</i>
 
 </p>
 </details>
@@ -43,9 +43,9 @@ sum(1, "2");
 <details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer: ?
+#### Answer: C
 
-<i>Write your explanation here</i>
+<i>In JavaScript, the + operator can be used both for numerical addition and string concatenation. In the sum function, it takes two parameters a and b. When sum(1, "2") function were called, JavaScript performs type conversion. It converts the number 1 to a string to match the data type of "2", and then it concatenates these two strings, result is string "12". </i>
 
 </p>
 </details>
@@ -69,9 +69,9 @@ console.log(food);
 <details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer: ?
+#### Answer: A
 
-<i>Write your explanation here</i>
+<i>An array called 'food' is defined with four element's with const keyword. Then an object 'info' is created with a property 'favoriteFood' & initially assigned the value of the [0]th index value from 'food' array. Then the value of 'info.favoriteFood' is reassigned to "🍝" & it does not affect the original 'food' array. So when 'food' variable console logged it shows ['🍕', '🍫', '🥑', '🍔'] as output. </i>
 
 </p>
 </details>
@@ -94,9 +94,9 @@ console.log(sayHi());
 <details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer: ?
+#### Answer: B
 
-<i>Write your explanation here</i>
+<i>Function "sayHi(name)" expecting a parameter 'name' when it will be called. But when it call without providing any argument the 'name' parameter is undefined cause no value is passed. As a result the function return string with including 'undefined' word.So console shows'Hi there, undefined' as output.</i>
 
 </p>
 </details>
@@ -122,9 +122,9 @@ console.log(count);
 <details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer: ?
+#### Answer: C
 
-<i>Write your explanation here</i>
+<i>Using let keyword at first 'count' variable declared by initialize '0' then an array 'nums' is defined with four elements. Then a iterator 'forEach' method is used to iterate over each element 'nums' array. Each element received by num & inside the callback function conditional statement check if current num is truthy value then 'count' increment by 1. In 'nums' array three elements are truthy value & 'count' updated to 3, Lastly console logged count is 3 .</i>
 
 </p>
 </details>
