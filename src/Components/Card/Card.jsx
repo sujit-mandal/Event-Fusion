@@ -11,7 +11,9 @@ const Card = ({ service }) => {
       <h3 className="text-base md:text-xl text-gray-500">
         Starts From: <span className="font-semibold text-black">{price}</span>
       </h3>
-      <p className="w-full md:w-5/6 font-normal md:font-medium pb-2">{shortDescription}</p>
+      <p className="w-full md:w-5/6 font-normal md:font-medium pb-2">
+        {shortDescription}
+      </p>
       <Link to={`/service-details/${id}`}>
         <button className="bg-[#FD60A2] px-4 py-2 text-lg text-white rounded-lg float-left md:float-right hover:border-2 hover:border-[#FD60A2] hover:bg-transparent hover:text-black">
           Booking <BsArrowRight className="inline text-2xl"></BsArrowRight>
