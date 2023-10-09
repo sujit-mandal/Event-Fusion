@@ -55,6 +55,14 @@ const myCreatedRoute = createBrowserRouter([
         element: <Register />,
       },
       {
+        path: "/about",
+        element: <About />,
+      },
+      {
+        path: "/contact-us",
+        element: <Contact />,
+      },
+      {
         path: "*",
         element: <ErrorPage />,
       },

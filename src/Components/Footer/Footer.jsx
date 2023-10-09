@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <div>
       <footer className="flex w-full flex-col md:flex-row md:px-5 flex-wrap items-center justify-center gap-y-6 gap-x-12 border-t border-blue-gray-50 py-6 text-center md:justify-between">
-        <p className="block font-sans text-xl font-normal leading-relaxed text-gray-900 antialiased">
+        <p className="font-sans text-xl font-normal text-gray-900 ">
           © 2023 Event Fusion
         </p>
         <div className="text-3xl flex items-center gap-4">
@@ -16,34 +16,18 @@ const Footer = () => {
         <ul className="flex flex-col lg:flex-row flex-wrap items-center md:items-start gap-y-2 gap-x-8">
           <li>
             <Link
-              to={"*"}
-              className="block font-sans text-base font-normal leading-relaxed text-blue-gray-900 antialiased transition-colors hover:text-pink-500 focus:text-pink-500"
+              to={"/about"}
+              className=" font-sans text-base font-normal  hover:text-pink-500 focus:text-pink-500"
             >
               About Us
             </Link>
           </li>
           <li>
             <Link
-              to={"*"}
-              className="block font-sans text-base font-normal leading-relaxed text-blue-gray-900 antialiased transition-colors hover:text-pink-500 focus:text-pink-500"
+              to={"/contact-us"}
+              className=" font-sans text-base font-normal  hover:text-pink-500 focus:text-pink-500"
             >
               Contact Us
-            </Link>
-          </li>
-          <li>
-            <Link
-              to={"*"}
-              className="block font-sans text-base font-normal leading-relaxed text-blue-gray-900 antialiased transition-colors hover:text-pink-500 focus:text-pink-500"
-            >
-              Privacy Policy
-            </Link>
-          </li>
-          <li>
-            <Link
-              to={"*"}
-              className="block font-sans text-base font-normal leading-relaxed text-blue-gray-900 antialiased transition-colors hover:text-pink-500 focus:text-pink-500"
-            >
-              Terms & Conditions
             </Link>
           </li>
         </ul>
