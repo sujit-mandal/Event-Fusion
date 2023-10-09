@@ -3,7 +3,8 @@
 
 Our social event management project simplifies event planning and execution. Features include guest list management, venue selection, budget tracking, and real-time communication tools. The platform offers analytics for post-event evaluation. It ensures a seamless experience for organizers and attendees, from weddings to birthday events.
 
-## [Live Demo] (https://social-event-management-24be6.web.app/)
+## [Live Demo](https://social-event-management-24be6.web.app/)
+
 ### Click here for live demo:  https://social-event-management-24be6.web.app/
 
 ## Core Project Features
