@@ -6,7 +6,7 @@ import { HiLightBulb } from "react-icons/hi";
 
 const Services = () => {
   return (
-    <div className="grid grid-cols-1 md:flex md:flex-col px-2 md:px-10 lg:px-2 lg:grid-cols-3  gap-5 row-span-2 my-20">
+    <div className="grid grid-cols-1 px-2 md:px-10 lg:px-2 lg:grid-cols-3  gap-5 row-span-2 my-20">
       <div className="flex flex-col text-center lg:text-left justify-center">
         <p className="font-mono tracking-widest pb-3 text-xl">We ARE EVENT FUSION</p>
         <h1 className="text-black text-5xl font-semibold pb-8">

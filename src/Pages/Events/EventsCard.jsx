@@ -4,7 +4,7 @@ import { AiOutlineCalendar } from "react-icons/ai";
 const EventsCard = (props) => {
     const {img, title, time, place}=props.props;
   return (
-    <div className="space-y-2 my-10 border-[#FD60A2] border-2 p-2 rounded-lg">
+    <div className="space-y-2 my-3  md:my-10 border-[#FD60A2] border-2 p-2 rounded-lg">
       <img
         src={img}
         alt={title} className="w-full"

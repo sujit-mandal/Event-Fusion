@@ -5,7 +5,7 @@ const Card = ({ service }) => {
   const { id, image, name, price, shortDescription } = service;
 
   return (
-    <div className="space-y-3 shadow-md p-3 border-2 hover:p-2 rounded-lg md:hover:border-2 transition duration-500 border-[#ef95ba]">
+    <div className="space-y-3 shadow-md p-3 border-2  rounded-lg md:border-0 md:hover:border-2 transition duration-500 border-[#ef95ba]">
       <img src={image} alt="" />
       <h2 className="text-xl md:text-3xl font-medium">{name}</h2>
       <h3 className="text-base md:text-xl text-gray-500">
@@ -17,7 +17,6 @@ const Card = ({ service }) => {
           Booking <BsArrowRight className="inline text-2xl"></BsArrowRight>
         </button>
       </Link>
-      `
     </div>
   );
 };
