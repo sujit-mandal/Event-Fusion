@@ -15,7 +15,7 @@ const Home = () => {
   }, []);
 
   return (
-    <div data-aos="fade-right">
+    <div style={{"overflow-x": "hidden"}}>
       <Banner />
       <Divider></Divider>
       <div className="text-center pt-2 " data-aos="fade-down-left">
@@ -28,14 +28,15 @@ const Home = () => {
         </p>
       </div>
       <div
-        data-aos="flip-up"
+        data-aos="fade-up"
+        data-aos-anchor-placement="top-center"
         className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mx-3 gap-5 mt-5"
       >
         {services.map((service) => (
           <Card key={service.id} service={service}></Card>
         ))}
       </div>
-      <Services data-aos="fade-down-left"></Services>
+      <Services data-aos="zoom-out-up"></Services>
       <Testimonial
         data-aos="fade-right"
         data-aos-offset="300"
